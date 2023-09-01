@@ -1,0 +1,19 @@
+{
+  "name": "love-thy-neighbor-monolith-backend",
+  "version": "1.0.0",
+  "description": "Monolith backend application of Love Thy Neighbor frontend client application.",
+  "main": "bin/index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Love-Thy-Neighbor-Dev/love-thy-neighbor-monolith-backend.git"
+  },
+  "author": "Love Thy Neighbor Dev Org",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Love-Thy-Neighbor-Dev/love-thy-neighbor-monolith-backend/issues"
+  },
+  "homepage": "https://github.com/Love-Thy-Neighbor-Dev/love-thy-neighbor-monolith-backend#readme"
+}
