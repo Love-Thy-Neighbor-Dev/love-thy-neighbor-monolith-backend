@@ -1,0 +1,13 @@
+{
+    "env": {
+        "jest": true,
+        "node": true,
+        "es2021": true
+    },
+    "extends": ["standard-with-typescript", "prettier"], // make sure the "prettier" is the last item in the array
+    "parserOptions": {
+        "ecmaVersion": "latest"
+    },
+    "rules": {
+    }
+}
