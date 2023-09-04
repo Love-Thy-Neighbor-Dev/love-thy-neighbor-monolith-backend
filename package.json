@@ -5,7 +5,9 @@
   "main": "bin/index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\"",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "lint": "eslint src/**/*.ts",
+    "format": "eslint src/**/*.ts --fix"
   },
   "lint-staged": {
     "*.{js,ts,json}": [
