@@ -1,9 +1,55 @@
 {
+  "name": "love-thy-neighbor-monolith-backend",
+  "version": "1.0.0",
+  "description": "Monolith backend application of Love Thy Neighbor frontend client application.",
+  "main": "bin/index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\"",
+    "prepare": "husky install",
+    "build": "npx tsc",
+    "start": "TZ='UTC' node dist/index.js",
+    "dev": "TZ='UTC' nodemon src/index.ts",
+    "lint": "eslint src/**/*.ts",
+    "format": "eslint src/**/*.ts --fix"
+  },
+  "lint-staged": {
+    "*.{js,ts,json}": [
+      "eslint",
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Love-Thy-Neighbor-Dev/love-thy-neighbor-monolith-backend.git"
+  },
+  "author": "Love Thy Neighbor Dev Org",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Love-Thy-Neighbor-Dev/love-thy-neighbor-monolith-backend/issues"
+  },
+  "homepage": "https://github.com/Love-Thy-Neighbor-Dev/love-thy-neighbor-monolith-backend#readme",
   "dependencies": {
     "body-parser": "^1.20.2",
     "express": "^4.18.2"
   },
   "devDependencies": {
-    "@types/express": "^4.17.17"
+    "@types/node": "^20.5.9",
+    "@types/express": "^4.17.17",
+    "@typescript-eslint/eslint-plugin": "^6.6.0",
+    "@typescript-eslint/parser": "^6.6.0",
+    "eslint": "^8.48.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-config-standard-with-typescript": "^39.0.0",
+    "eslint-plugin-import": "^2.28.1",
+    "eslint-plugin-n": "^16.0.2",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "husky": "^7.0.0",
+    "lint-staged": "^14.0.1",
+    "nodemon": "^3.0.1",
+    "prettier": "^3.0.3",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
   }
 }
