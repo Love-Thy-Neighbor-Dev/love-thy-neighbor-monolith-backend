@@ -1,15 +1,12 @@
-name: Test
+name: Node.js CI
 on:
-  push:
-    branches:
-      - main
   pull_request:
     branches:
       - main
 
 jobs:
-  run-action:
-    name: Run action
+  build-and-test:
+    name: Build and Test
     runs-on: ubuntu-latest
 
     steps:
@@ -28,3 +25,5 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Test
+        run: npm run test
