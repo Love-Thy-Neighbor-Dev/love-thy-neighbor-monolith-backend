@@ -3,11 +3,16 @@
   "version": "1.0.0",
   "description": "Monolith backend application of Love Thy Neighbor frontend client application.",
   "main": "bin/index.ts",
+  "engines": {
+    "node": "18.18.0",
+    "npm": "9.8.1"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\"",
     "prepare": "husky install",
     "build": "npx tsc",
     "start": "TZ='UTC' node dist/index.js",
+    "start:dev": "nodemon",
     "dev": "TZ='UTC' nodemon src/index.ts",
     "lint": "eslint src/**/*.ts",
     "format": "eslint src/**/*.ts --fix"
@@ -31,11 +36,13 @@
   "homepage": "https://github.com/Love-Thy-Neighbor-Dev/love-thy-neighbor-monolith-backend#readme",
   "dependencies": {
     "body-parser": "^1.20.2",
-    "express": "^4.18.2"
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongoose": "^7.5.2"
   },
   "devDependencies": {
-    "@types/node": "^20.5.9",
     "@types/express": "^4.17.17",
+    "@types/node": "^20.5.9",
     "@typescript-eslint/eslint-plugin": "^6.6.0",
     "@typescript-eslint/parser": "^6.6.0",
     "eslint": "^8.48.0",
