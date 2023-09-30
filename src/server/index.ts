@@ -9,7 +9,6 @@ const server = express();
 server.use(bodyParser.urlencoded({ extended: false }));
 server.use(bodyParser.json());
 
-console.log('RootLevelRouter: ', RootLevelRouter);
 server.use('/', RootLevelRouter);
 
 server.listen(process.env.PORT, async () => {
