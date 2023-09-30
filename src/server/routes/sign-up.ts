@@ -1,10 +1,9 @@
 import { Router } from 'express';
-import type { Request, Response } from 'express';
+
+import SignUpController from '../controllers/sign-up';
 
 const SignUpRouter = Router();
 
-SignUpRouter.get('/', (req: Request, res: Response) => {
-  res.json({ message: 'SignUp World!' });
-});
+SignUpRouter.get('/', SignUpController);
 
 export { SignUpRouter };
